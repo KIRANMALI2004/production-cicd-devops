@@ -1,0 +1,3 @@
+aws_region  = "ap-south-1"
+project_name = "production-cicd-devops"
+environment = "production"
