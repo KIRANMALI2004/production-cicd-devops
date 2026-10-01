@@ -1,14 +1,11 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def home():
-    return jsonify({
-        "message": "Production CI/CD DevOps Application",
-        "status": "running"
-    })
+    return render_template("index.html")
 
 
 @app.route("/health")
@@ -18,6 +15,11 @@ def health():
     })
 
 
+@app.route("/health-ui")
+def health_ui():
+    return render_template("health.html")
+
+
 @app.route("/api/info")
 def info():
     return jsonify({
@@ -25,6 +27,11 @@ def info():
         "version": "1.0.0",
         "environment": "production"
     })
+
+
+@app.route("/api-info-ui")
+def api_info_ui():
+    return render_template("api_info.html")
 
 
 if __name__ == "__main__":

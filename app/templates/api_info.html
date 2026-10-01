@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>API Information | Production CI/CD DevOps</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="logo">📡</div>
+
+            <h1>API Information</h1>
+
+            <p class="subtitle">
+                Production CI/CD DevOps API Services
+            </p>
+        </header>
+
+        <main>
+
+            <section class="status-card">
+
+                <div class="status-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <h2>API Services Available</h2>
+
+                    <p>
+                        The application provides API endpoints for
+                        monitoring and application information.
+                    </p>
+                </div>
+
+            </section>
+
+            <section class="info-grid">
+
+                <div class="info-card">
+                    <span class="label">Application</span>
+                    <strong>Production CI/CD</strong>
+                </div>
+
+                <div class="info-card">
+                    <span class="label">Version</span>
+                    <strong>1.0.0</strong>
+                </div>
+
+                <div class="info-card">
+                    <span class="label">Framework</span>
+                    <strong>Flask</strong>
+                </div>
+
+                <div class="info-card">
+                    <span class="label">Response</span>
+                    <strong>JSON</strong>
+                </div>
+
+            </section>
+
+            <section class="pipeline">
+
+                <h2>Available API Endpoints</h2>
+
+                <br>
+
+                <p>
+                    <strong>/health</strong>
+                </p>
+
+                <p>
+                    Returns the current health status of the application.
+                </p>
+
+                <br>
+
+                <p>
+                    <strong>/api/info</strong>
+                </p>
+
+                <p>
+                    Returns application version and environment information.
+                </p>
+
+            </section>
+
+            <section class="buttons">
+
+                <a href="/" class="button">
+                    ← Back to Dashboard
+                </a>
+
+               <a href="/api/info" class="button secondary" target="_blank">
+    View JSON Response ↗
+</a>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <p>
+                Production CI/CD DevOps Project
+            </p>
+
+            <p>
+                Flask • Docker • GitHub Actions • Trivy • Terraform
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>

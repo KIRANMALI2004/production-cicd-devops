@@ -17,10 +17,8 @@ def test_home():
     response = client.get("/")
 
     assert response.status_code == 200
-
-    data = response.get_json()
-
-    assert data["status"] == "running"
+    assert b"Production CI/CD DevOps" in response.data
+    assert b"Application is Running" in response.data
 
 
 def test_health():
